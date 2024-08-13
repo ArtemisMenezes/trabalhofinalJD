@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Brasil</title>
+    <link rel="stylesheet" href="estilo1.css">
+    
+    <head>
+        <body>
+         <header>
+            
+         <nav>
+            <div class="logo"><p>CLICKFILM</p></div>
+            <ul class ="navegacao">
+               <li> <a href="file:///D:/FRONT%20END/trabalhofinal/clickbrasil.html">Sobre</a></li>
+            
+               <li><a href="#secao2">Atrações</a></li>
+               <li><a href="#slider">Galeria</a></li>
+               <li> <a href="/">Contato</a></li>
+            </ul>
+         </nav>
+         </header>
+         <section id="secao1">
+          
+            <div class="sombra">
+            <div class="conteudo">
+                <h1>O que é o <br>Click Brasil?</h1>
+
+                <p>O ClickBrasil é um evento criado com o intuito de aproximar <br>os jovens brasileiros do cinema nacional. O evento conta com uma <br>programação de atividades para apresentar a evolução da <br>cinematografia brasileira, o processo de criação dos filmes<br> e a vida dos atores por trás das camêras.<br> Ufc Virtual - Campus do Pici, 20/08/24.</p>
+
+                <button class="ins"><a href="#secao4">Inscreva-se</a></button>
+            </div>
+         </div>
+            
+         </section>
+         
+
+        <section id="secao2">
+         <h2>Atrações</h2>
+        </div>
+        <div class="caixa cx1">
+         <div class="cont ct1">
+         <h3>Sessão Cine</h3>
+         <p>Sala 07 - 10h00</p>
+      </div>
+        </div>
+        <div class="caixa cx2">
+         <div class="cont ct2">
+            <h3>Bate Papo</h3>
+            <p>Ateliê - 15h00</p>
+         </div>
+      </div>
+        <div class="caixa cx3">
+         <div class="cont ct3">
+            <h3>Exposição</h3>
+            <p>Sala 01 - 13h00</p>
+         </div>
+      </div>
+        <div class="caixa cx4">
+         <div class="cont ct4">
+            <h3>Feirinha</h3>
+            <p>Estacionamento UFC Virtual - 13h00</p>
+         </div>
+      </div>
+   
+        </section>
+ 
+
+   <!--slide show dos filmes em cartas -->
+ 
+      <div id="slider">
+        <div class="lista">
+        <div class="item">
+         <h4>O auto da compadecida
+         </h4>
+         <p id="desc">2000 ‧ Comédia/Aventura ‧ 1h44m</p>
+         <img src="D:\FRONT END\trabalhofinal\imagens\O-Auto-da-Compadecida-2-e1706266986719.webp">
+        </div>
+
+        <div class="item">
+         <h4>Que horas ela volta?
+         </h4>
+         <p id="desc">2015 ‧ Drama ‧ 1h52m</p>
+         <img src="D:\FRONT END\trabalhofinal\imagens\Que-horas2.jpg">
+        </div>
+
+        <div class="item">
+         <h4>Elena
+         </h4>
+         <p id="desc">2012 ‧ Documentário/Drama ‧ 1h21m</p>
+         <img src="D:\FRONT END\trabalhofinal\imagens\Central-do-Brasil-1.webp">
+        </div>
+
+        <div class="item">
+         <h4>Central do brasil
+         </h4>
+         <p id="desc">1998 ‧ Drama/Filme de estrada ‧ 1h55m
+         </p>
+         <img src="D:\FRONT END\trabalhofinal\imagens\Central-do-Brasil-1.webp">
+        </div>
+     
+        </div>
+      <!--botoes prev/next e dots -->
+      <div class="botoes">
+       <button id="prev"><</button>
+       <button id="next">></button>
+      </div>
+       <ul class="dots">
+        <li class="ativo"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+       </ul>
+      </div>
+  
+   
+
+      <section id="secao4">
+         <h6>Não perca a oportunidade<br>de participar do evento!</h6>
+         
+         
+         <fieldset class="inscricao">
+         <form id="forminsc">
+
+            <label for="nome">Informe seu nome completo:
+               <input id="nome" name="nome" type="text" required placeholder="Ex: Fulano da Silva..." autocomplete="off" action=""> </label>
+           <span id="nomeError" class="mensagem-erro"></span>
+      
+
+            <label for="email">Informe seu melhor Email:<input id="email" name="email" type="email" required placeholder="Ex: fulanosicrano@gmail.com..." autocomplete="off"> </label>
+            <span id="emailError" class="mensagem-erro"></span>
+
+            <label for="sugestao">Deixe alguma sugestao:
+               <textarea id="sugestao" name="sugestao" rows="3" cols="30" placeholder="Colocar mais filmes em cartaz..."></textarea>
+               <input id="submit" type="submit" value="Submit" />
+         </form>
+      </fieldset>
+      <div id="faq">
+      <p>FAQ</p>
+      
+         
+         <button class="pergunta">O evento é gratuito?</button>
+         <div class="panel">
+             <p>Sim, o evento é totalmente gratuito, é uma iniciativa voluntária dos alunos da UFC.</p>
+         </div>
+     
+         <button class="pergunta">Tem restrição de idade?</button>
+         <div class="panel">
+             <p>Não, o evento é aberto para todo o público, porém, menores de 15 anos apenas acompanhados por um responsável</p>
+         </div>
+     
+         <button class="pergunta">Até quando posso me inscrever?</button>
+         <div class="panel">
+             <p>As inscrições ficarão abertas até o dia 19/08 (um dia antes do evento).</p>
+         </div>
+     
+         <button class="pergunta">Pode levar convidados de fora da UFC?</button>
+         <div class="panel">
+             <p>Sim! O evento é aberto ao público.</p>
+         </div>
+     
+         <button class="pergunta">Vai ter barracas de comida na feirinha?</button>
+         <div class="panel">
+             <p>Sim! Além disso também terá a venda de produtos de artistas locais</p>
+         </div>
+     
+         <button class="pergunta">Quem está realizando o evento?</button>
+         <div class="panel">
+             <p>Esse evento é realizado por alunos do primeiro semestre de Sistemas e Mídias Digitais.</p>
+         </div>
+     </div>
+     
+      </section>
+
+
+      <script src="./interação.js" ></script>
+        </body>
+    

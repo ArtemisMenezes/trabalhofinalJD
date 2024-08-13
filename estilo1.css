@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); /* Fontes da nav */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaisei+Opti&family=Karma:wght@300;400;500;600;700&family=Koh+Santepheap:wght@100;300;400;700;900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); /* Fontes para os titulos */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaisei+Opti&family=Karma:wght@300;400;500;600;700&family=Koh+Santepheap:wght@100;300;400;700;900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); /* Fontes para os textos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+}
+
+/* nav bar estilos */
+
+.logo {
+    display: flex;
+    padding: 0px 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width:101%;
+    height: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: rgba(246, 189, 16, 0.6); /* Cor de fundo transparente */
+    padding: 30px 40px;
+    word-spacing: 5rem;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+ul, li, a {
+    margin-left: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    color: #ffffff;
+    display: inline-flex;
+   
+
+}
+
+
+ section {
+    height: 100vh;
+    position: relative;
+    width: 101%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+ }
+
+#secao1 {
+    background-image: url("https://cdn.discordapp.com/attachments/1213285460911198299/1271837104241905726/quehoras_ela_volta.jpg?ex=66b8ca1b&is=66b7789b&hm=bc03fd0dc69fde46a04d965967c79a291b0784cda18131f7648bb54a1607b8be&");
+     
+}
+
+
+#secao1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0,0,0, 0.2));
+    z-index: 1;
+}
+
+.conteudo {
+    position: relative;
+    top: 200px;
+    left: 100px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.conteudo h1{
+    text-transform: uppercase;
+    padding-top: 45px;;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 50px;
+    
+}
+
+.conteudo p {
+    
+    margin-top: 60px;
+    font-family: "Karma", serif;
+    font-weight: 400;
+    font-size:30px;
+    
+}
+
+
+.ins {
+    margin-top: 100px;
+    width: 250px;
+    height: 80px;
+    border: 2px solid rgb(180, 163, 8);
+    background: none;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ins:hover {
+   border: none;
+   background: rgba(246, 189, 16, 0.8);
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#secao2, #secao4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image:linear-gradient(to bottom, rgb(1, 21, 38), rgb(10, 10, 10));
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    margin-left: 100px;
+    margin-top: 200px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.caixa {
+    height: 400px;
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 100px;
+    border-radius: 40px;
+    overflow: hidden;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    transition: 0.3s;
+   
+}
+
+.caixa:hover{
+    transform: scale(1.03);
+}
+
+.cx1 {
+    background-image: url("D:/FRONT END/trabalhofinal/imagens/sessaocinema.jpg");
+    object-fit: cover;
+    background-size: cover; /* Faz a imagem cobrir toda a área da div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+}
+
+.cx2 {
+    background-image: url("D:/FRONT END/trabalhofinal/imagens/rodadeconversa.jpg");
+    object-fit: cover;
+    background-size: cover; /* Faz a imagem cobrir toda a área da div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+}
+
+.cx3 {
+    background-image: url("D:/FRONT END/trabalhofinal/imagens/exposicao.jpg");
+    object-fit: cover;
+    background-size: cover; /* Faz a imagem cobrir toda a área da div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+}
+
+.cx4 {
+    background-image: url("D:/FRONT END/trabalhofinal/imagens/feirinha.jpg");
+    object-fit: cover;
+    background-size: cover; /* Faz a imagem cobrir toda a área da div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+}
+
+.cont {
+    background-color: rgb(196, 147, 0);
+    margin-top: 280px;
+    width:400px;
+    height:150px;
+    padding: 30px;
+}
+.cont p {
+    font-weight: 600;
+    font-family: "karma", sans-serif;
+}
+
+/*slideshow*/
+
+#slider {
+width: 101%;
+height: 1100px;
+margin: auto;
+position: relative;
+overflow: hidden;
+}
+
+.lista {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.item {
+    min-width: 100vw; 
+    height: 100%; 
+    box-sizing: border-box; 
+    position: relative;
+   
+}
+
+.lista img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+}
+ .item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0,0,0, 0.2));
+    z-index: 1;
+}
+
+h4 {
+        background: none; /* Remove qualquer fundo */
+        background-color: transparent; /* Define a cor do fundo como transparente */
+        color: #fff; 
+        position: absolute; /* Posiciona o texto no slideshow */
+        margin-top: 150px;
+        margin-left: 50px;
+        top: 0; /* Ajuste a posição conforme necessário */
+        left: 0; /* Ajuste a posição conforme necessário */
+        z-index: 10;
+        text-transform: uppercase;
+        padding-top: 45px;
+        margin-left: 100px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 500;
+        font-size: 40px;
+}
+
+#desc {
+    background: none; /* Remove qualquer fundo */
+    background-color: transparent; /* Define a cor do fundo como transparente */
+    color: #fff; 
+    position: absolute; /* Posiciona o texto no slideshow */
+    margin-top: 150px;
+    margin-left: 50px;
+    top: 0; /* Ajuste a posição conforme necessário */
+    left: 0; /* Ajuste a posição conforme necessário */
+    z-index: 10;
+    text-transform: uppercase;
+    padding-top: 100px;
+    margin-left: 100px;
+    font-weight: 600;
+    font-family: "karma", sans-serif;
+}
+
+.botoes {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+}
+
+
+
+#prev, #next {
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+    background: none;
+    border-radius: 50px;
+    border:2px solid rgb(180, 163, 8); ;
+    align-items: center;
+    justify-items: center;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    z-index: 2;
+}
+
+.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color:#ffffff;
+    margin: 20px;
+    border-radius: 20px;
+  }
+
+  
+  .dots li.ativo {
+    width:30px;
+    
+  }
+
+  /*secao 4*/
+  h5 {
+    color: #fff; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 500px;
+    margin-right: 230px;
+    text-transform: uppercase;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#formsp {
+    font-family: "karma", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right:0;
+    margin-top: 160px;
+    margin-right: 290px;
+}
+
+
+.inscricao {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 250px;
+    margin-right: 100px;
+    font-size: 30px;
+    width: 800px;
+    height: 600px;
+    border: none;
+    background-color: rgb(196, 147, 0);
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+   
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: rgb(204, 204, 204);
+    display: block;
+    margin-top: 10px; 
+    width: 100%; 
+    height: 60px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#submit {
+    margin-top: 30px;
+    width: 250px;
+    height: 80px;
+    border: 2px solid rgb(255, 255, 255);
+    background: none;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.mensagem-erro {
+    color: rgb(255, 0, 0);
+}
+/*FAQ*/
+
+#faq {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 100px;
+    margin-bottom: 120px;
+}
+
+#faq p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.pergunta {
+    background-color: rgb(196, 147, 0);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 800px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.pergunta:hover, .pergunta.active {
+    background-color: rgb(224, 180, 46);
+}
+
+.panel {
+    max-height: 0;
+    width: 800px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0px 18px;
+    background-color: rgb(199, 149, 11);
+    font-family: "Karma", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.pergunta.active + .panel {
+    max-height: 500px; /* Ajuste conforme necessário */
+}
+
+.pergunta:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.pergunta.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+  h6 {
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    margin-top: 60px;
+    font-family: "Karma", serif;
+    font-weight: 400;
+    font-size:60px;
+  }
