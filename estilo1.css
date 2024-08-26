@@ -22,8 +22,8 @@
 
 nav {
     display: flex;
-    justify-content: space-between;
-    width:101%;
+    justify-content: right;
+    width:100%;
     height: 5rem;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background-color: rgba(246, 189, 16, 0.6); /* Cor de fundo transparente */
@@ -34,7 +34,10 @@ nav {
     z-index: 1000;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    overflow: hidden;
 }
+
+/* Configuração dos itens que estão dentro da nav bar*/
 
 ul, li, a {
     margin-left: 30px;
@@ -49,22 +52,24 @@ ul, li, a {
 
 }
 
+/*Configuração geral de posição para todas as seções do site*/
 
  section {
     height: 100vh;
     position: relative;
-    width: 101%;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
  }
 
+ /*Configuração da seção 1, filtros e alinhamentos */
 #secao1 {
-    background-image: url("https://cdn.discordapp.com/attachments/1213285460911198299/1271837104241905726/quehoras_ela_volta.jpg?ex=66b8ca1b&is=66b7789b&hm=bc03fd0dc69fde46a04d965967c79a291b0784cda18131f7648bb54a1607b8be&");
+    background-image: url("quehoras\ ela\ volta.jpg");
      
 }
 
-
+/* elemento before faz com que crie uma camada pra fazer o efeito de sombra gradiente na página */
 #secao1::before {
     content: '';
     position: absolute;
@@ -76,6 +81,7 @@ ul, li, a {
     z-index: 1;
 }
 
+/* Ajustes dos conteudos dentro da seção */
 .conteudo {
     position: relative;
     top: 200px;
@@ -102,7 +108,7 @@ ul, li, a {
     
 }
 
-
+/* Configuração do botão inscreva-se, hover faz com que mude a cor do botao ao mouse passar sobre o elemento */
 .ins {
     margin-top: 100px;
     width: 250px;
@@ -124,6 +130,8 @@ ul, li, a {
    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
+/* Configuração da minha seção 2 e 4 ajustando configurações de alinhamento de conteúdos internos */
+
 #secao2, #secao4 {
   display: flex;
   justify-content: center;
@@ -131,6 +139,8 @@ ul, li, a {
   color: white;
   background-image:linear-gradient(to bottom, rgb(1, 21, 38), rgb(10, 10, 10));
 }
+
+/* Configuração dos elementos dentro da minha segunda seção, centralizando e adicionando efeito na escala da caixa usando hover */
 
 h2 {
     position: absolute;
@@ -161,36 +171,27 @@ h2 {
     transform: scale(1.03);
 }
 
-.cx1 {
-    background-image: url("D:/FRONT END/trabalhofinal/imagens/sessaocinema.jpg");
+/* Configuração de cada caixa individualmente, alinhamento e imagens de fundo*/
+.caixa {
     object-fit: cover;
     background-size: cover; /* Faz a imagem cobrir toda a área da div */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat;
+}
+.cx1 {
+    background-image: url("sessaocinema.jpg");
 }
 
 .cx2 {
-    background-image: url("D:/FRONT END/trabalhofinal/imagens/rodadeconversa.jpg");
-    object-fit: cover;
-    background-size: cover; /* Faz a imagem cobrir toda a área da div */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat;
+    background-image: url("rodadeconversa.jpg");
 }
 
 .cx3 {
-    background-image: url("D:/FRONT END/trabalhofinal/imagens/exposicao.jpg");
-    object-fit: cover;
-    background-size: cover; /* Faz a imagem cobrir toda a área da div */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat;
+    background-image: url("exposicao.jpg");
 }
 
 .cx4 {
-    background-image: url("D:/FRONT END/trabalhofinal/imagens/feirinha.jpg");
-    object-fit: cover;
-    background-size: cover; /* Faz a imagem cobrir toda a área da div */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat;
+    background-image: url("feirinha.jpg");
 }
 
 .cont {
@@ -208,7 +209,7 @@ h2 {
 /*slideshow*/
 
 #slider {
-width: 101%;
+width: 100%;
 height: 1100px;
 margin: auto;
 position: relative;
@@ -298,17 +299,19 @@ h4 {
 
 
 #prev, #next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 60px;
     height: 60px;
     color: #ffffff;
     background: none;
     border-radius: 50px;
     border:2px solid rgb(180, 163, 8); ;
-    align-items: center;
-    justify-items: center;
+   
     font-family: "Roboto Slab", serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .dots {
@@ -321,6 +324,7 @@ h4 {
     justify-content: center;
     display: flex;
     z-index: 2;
+    transition: transform 0.2s;
 }
 
 .dots li {
